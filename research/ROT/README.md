@@ -38,6 +38,25 @@ PELAVIUM investigates whether some privacy properties survive the failure of ind
 
 Conventional cryptography asks how unauthorized reading can be prevented. ROT asks what an observer can establish from obtained information and what observation itself entails.
 
+## Riemann-inspired mathematical philosophy
+
+The Riemann hypothesis concerns the zeros of the Riemann zeta function and their relationship to the distribution of primes. It remains unproven. Prime numbers are deterministic, and the next prime can be computed. Neither the hypothesis nor the apparent irregularity of primes proves privacy or unpredictability.
+
+The conceptual inspiration is the distinction between aggregate statistical knowledge and knowledge of individual events. PELAVIUM asks whether aggregate observations disclose additional information about genuine communications. This is a research question, not an established property.
+
+| Mathematical field | Research relevance |
+| --- | --- |
+| Riemann hypothesis | Conceptual inspiration concerning statistical distributions |
+| Shannon entropy | Quantification of uncertainty |
+| Mutual information | Measurement of information leakage |
+| Bayesian inference | Evaluation of observer knowledge relative to priors |
+| Statistical hypothesis testing | Evaluation of empirical evidence |
+| Computational indistinguishability | Formal security evaluation under explicit assumptions |
+
+A billion unsuccessful predictions do not establish mathematical impossibility. Chance-level accuracy depends on the prior distribution, and failure to detect leakage is not proof of its absence. No numerical threshold or prime-based assumption is a substitute for a valid proof. Privacy claims must be established under explicit threat models, with reproducible evidence and independent review. The Riemann hypothesis is not a cryptographic dependency.
+
+Reference: [Clay Mathematics Institute — Riemann hypothesis](https://www.claymath.org/millennium/riemann-hypothesis/).
+
 ## Scientific status
 
 ROT is a research direction, not an implemented protocol, formal proof or operational anonymity guarantee. The [ROT specification](../ROT.md), [BSCA constitution](../BSCA-CONSTITUTION.md) and [engineering constitution](../../CONSTITUTION.md) remain applicable. Independent review and separate deployment approval are required. No production adoption is implied.
