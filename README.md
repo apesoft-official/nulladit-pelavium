@@ -40,3 +40,8 @@ Developed by **Apesoft Canada** · **Inviolable Conversations**
 ## Cryptography Evidence Lab
 
 [Open tester source](tester/index.html) or download the standalone HTML and serve locally (HTTPS or localhost for Web Crypto). Evidence maturity rankings are not security scores. The local AES-GCM sanity checks do not test deployed NULLADIT; the NODSEL source-to-release mapping remains unverified. No wallet, personal data or smart contract required.
+
+
+## Constitutional accountability
+
+[VESTIGIUM](VESTIGIUM.md) is a proposed accountability protocol for privacy-preserving delivery evidence. Its research contract stores opaque batch commitments only; it does not reveal message contents or grant access to protected data. The current candidate is not deployed and is not a production dependency.
