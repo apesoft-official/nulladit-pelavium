@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.24;
-import "../Vestigavium.sol";
+import "../Vestigium.sol";
 
 interface Vm {
     function chainId(uint256) external;
     function prank(address) external;
     function expectRevert(bytes4) external;
 }
-contract MockCovenant is IVestigaviumCovenant {
+contract MockCovenant is IVestigiumCovenant {
     bytes32 public override foundationRoot = keccak256("foundation");
     bool public approved;
     bool public revoked;
@@ -20,15 +20,15 @@ contract MockCovenant is IVestigaviumCovenant {
         return (bytes32(0),bytes32(0),manifest,1,revoked);
     }
 }
-contract VestigaviumTest {
+contract VestigiumTest {
     Vm constant vm = Vm(address(uint160(uint256(keccak256("hevm cheat code")))));
     MockCovenant c;
-    Vestigavium v;
+    Vestigium v;
     bytes32 constant ROOT = keccak256("synthetic batch");
     function setUp() public {
         vm.chainId(324);
         c = new MockCovenant();
-        v = new Vestigavium(address(c),c.foundationRoot(),keccak256("manifest"),1,address(this));
+        v = new Vestigium(address(c),c.foundationRoot(),keccak256("manifest"),1,address(this));
     }
     function approve() internal { c.configure(true,false,v.configurationCommitment()); }
     function testInactiveInitially() public { require(!v.active()); }
@@ -37,7 +37,7 @@ contract VestigaviumTest {
         require(v.batchRoots(1)==ROOT && v.lastEpoch()==1);
     }
     function testUnapproved() public {
-        vm.expectRevert(Vestigavium.NotApproved.selector); v.commitBatch(1,ROOT);
+        vm.expectRevert(Vestigium.NotApproved.selector); v.commitBatch(1,ROOT);
     }
     function testWrongCommitment() public {
         c.configure(true,false,ROOT); require(!v.active());
@@ -46,23 +46,23 @@ contract VestigaviumTest {
         approve(); c.configure(true,true,v.configurationCommitment()); require(!v.active());
     }
     function testUnauthorized() public {
-        approve(); vm.expectRevert(Vestigavium.Unauthorized.selector);
+        approve(); vm.expectRevert(Vestigium.Unauthorized.selector);
         vm.prank(address(123)); v.commitBatch(1,ROOT);
     }
     function testReplay() public {
         approve(); v.commitBatch(1,ROOT);
-        vm.expectRevert(Vestigavium.InvalidBatch.selector); v.commitBatch(1,ROOT);
+        vm.expectRevert(Vestigium.InvalidBatch.selector); v.commitBatch(1,ROOT);
     }
     function testSkippedEpoch() public {
-        approve(); vm.expectRevert(Vestigavium.InvalidBatch.selector); v.commitBatch(2,ROOT);
+        approve(); vm.expectRevert(Vestigium.InvalidBatch.selector); v.commitBatch(2,ROOT);
     }
     function testZeroRoot() public {
-        approve(); vm.expectRevert(Vestigavium.InvalidBatch.selector); v.commitBatch(1,bytes32(0));
+        approve(); vm.expectRevert(Vestigium.InvalidBatch.selector); v.commitBatch(1,bytes32(0));
     }
     function testWrongChain() public { approve(); vm.chainId(1); require(!v.active()); }
     function testDifferentInstance() public {
         approve();
-        Vestigavium other = new Vestigavium(address(c),c.foundationRoot(),keccak256("manifest"),1,address(this));
+        Vestigium other = new Vestigium(address(c),c.foundationRoot(),keccak256("manifest"),1,address(this));
         require(!other.active());
     }
 }
