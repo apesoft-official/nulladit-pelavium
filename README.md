@@ -20,6 +20,11 @@ The [Proposed Deployment Logic](PROPOSED-DEPLOYMENT.md) defines the public candi
 ## Scientific discipline
 Label hypotheses, formal proofs, simulations and empirical results separately. Publish assumptions, methods, synthetic datasets and negative results. A simulation is not a proof; a proof under a model is not a guarantee of operational anonymity. No production adoption is implied by publication.
 
+## The Nonce Hypothesis
+
+[The Nonce Hypothesis](research/NONCE-HYPOTHESIS.md) presents a causal scalar-field model of local event intensity, causal partial ordering, a screened point-source solution and a reproducible numerical consistency campaign. It is research only: the recorded simulations test the implementation of the stated equations, not whether nature uses the model.
+
+
 All contributions follow the [engineering constitution](CONSTITUTION.md).
 
 ## The architecture of trust

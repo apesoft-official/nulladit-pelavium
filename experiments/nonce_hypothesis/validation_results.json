@@ -1,0 +1,41 @@
+{
+  "independent_seeds": [
+    20261127,
+    20261128,
+    20261129,
+    20261130,
+    20261131,
+    20261132,
+    20261133,
+    20261134,
+    20261135,
+    20261136
+  ],
+  "rounds": 10,
+  "field_rate_randomized_cases": 10000000,
+  "lorentz_pair_classifications": 10000000,
+  "causal_transitivity_triples": 10000000,
+  "poisson_rate_cells": 10000000,
+  "analytic_yukawa_radial_cases": 500000,
+  "total_counted_cases": 40500000,
+  "poisson_expected_total": 3974281.42126267,
+  "poisson_observed_total": 3974741,
+  "poisson_z_scores": [
+    1.3848906303830564,
+    0.07059668645823242,
+    -0.33157923973423337,
+    1.4808833685172174,
+    -0.40268103054084015,
+    -0.1129321662099016,
+    -1.4361702048971394,
+    0.5242988074328837,
+    -0.31476596370951465,
+    -0.13348682616015492
+  ],
+  "max_abs_poisson_z": 1.4808833685172174,
+  "max_log_rate_slope_error": 1.7284942366302403e-09,
+  "max_lorentz_interval_error": 1.7408297026122455e-13,
+  "max_yukawa_relative_residual": 4.484532870752039e-09,
+  "all_rounds_passed": true,
+  "scope": "Numerical/internal consistency only, not evidence of physical truth."
+}
