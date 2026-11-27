@@ -32,4 +32,7 @@ Privacy is not a privilege conferred by an intermediary. NULLADIT seeks to make 
 | [NODSEL](https://github.com/apesoft-official/nulladit-deployed-open-source-encryption-logic) | Public transparency for actual deployed encryption revisions |
 | [PELAVIUM](https://github.com/apesoft-official/nulladit-pelavium) | Experimental privacy research, not deployed |
 
+
+See [AURORA-COVENANT.md](AURORA-COVENANT.md) for the research-only registry proposal and production gates.
+
 Developed by **Apesoft Canada** · **Inviolable Conversations**
