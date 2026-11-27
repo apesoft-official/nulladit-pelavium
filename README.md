@@ -13,6 +13,10 @@ Encryption protects message contents, but communication patterns can reveal rela
 - Formal models, proofs where established, reproducible experiments, benchmarks and adversarial simulations.
 - Limitations including timing correlation, active adversaries, collusion, traffic scarcity and endpoint compromise.
 
+## Canonical research candidate
+
+The [Proposed Deployment Logic](PROPOSED-DEPLOYMENT.md) defines the public candidate lifecycle. The [candidate source](proposed_deployment.py) is currently a fail-closed scaffold, not a functional transport. See the [BSCA constitution](research/BSCA-CONSTITUTION.md), [ROT introduction](research/ROT/README.md), and [cryptographic compromise threat model](research/CRYPTOGRAPHIC-COMPROMISE.md). Automated tests are configured in the [research workflow](.github/workflows/proposed-deployment.yml); passing tests do not authorize deployment.
+
 ## Scientific discipline
 Label hypotheses, formal proofs, simulations and empirical results separately. Publish assumptions, methods, synthetic datasets and negative results. A simulation is not a proof; a proof under a model is not a guarantee of operational anonymity. No production adoption is implied by publication.
 
