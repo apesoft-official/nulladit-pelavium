@@ -8,3 +8,8 @@ Before any adoption, independently verify the eight addresses and interfaces, au
 
 
 A runtime code hash pins only the proxy shell if a founding address is a proxy. The current candidate does not pin implementation or beacon state; independently identify and verify any upgrade paths before considering deployment.
+
+
+## Vestigium accountability companion
+
+The private candidate deployment graph now proposes deploying Vestigium alongside Aurora Covenant. Vestigium remains inactive until Aurora records the exact instance configuration after the designated governance process. The companion records opaque batch roots only; it does not establish individual misconduct or grant access to protected data. This is a source-level proposal, not deployment authorization. See [VESTIGIUM.md](VESTIGIUM.md).
