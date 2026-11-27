@@ -1,0 +1,5 @@
+# PELAVIUM — Engineering constitution
+
+Maintain an explicit RESEARCH ONLY — NOT DEPLOYED disclaimer and link to NODSEL. Publish sanitized research, formal models, proofs with assumptions, reproducible experiments, benchmarks and limitations. Clearly label hypotheses versus verified results; never claim operational anonymity or quantum resistance without appropriate evidence. Use synthetic data and isolated experiments. Do not publish proprietary infrastructure, production secrets, real user traffic or confidential operational details. Handle exploitable production vulnerabilities through responsible disclosure. Every relevant research sweep must review public research updates; no automatic production adoption. Require independent review and separate deployment approval before any promotion to NODSEL.
+
+All changes must preserve the repository's trust boundary and distinguish design intent from verified results.
