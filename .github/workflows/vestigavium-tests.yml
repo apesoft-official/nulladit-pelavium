@@ -4,7 +4,7 @@ on:
     paths:
       - 'research/Vestigium.sol'
       - 'research/test/Vestigium.t.sol'
-      - '.github/workflows/vestigium-tests.yml'
+      - '.github/workflows/vestigavium-tests.yml'
   pull_request:
   workflow_dispatch:
 permissions:
