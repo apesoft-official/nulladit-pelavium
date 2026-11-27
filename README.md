@@ -45,3 +45,7 @@ Developed by **Apesoft Canada** · **Inviolable Conversations**
 ## Constitutional accountability
 
 [VESTIGIUM](VESTIGIUM.md) is a proposed accountability protocol for privacy-preserving delivery evidence. Its research contract stores opaque batch commitments only; it does not reveal message contents or grant access to protected data. The current candidate is not deployed and is not a production dependency.
+
+## VESTIGIUM — Evidence without surveillance
+
+Read the [Doctrine of Evidentiary Restraint](VESTIGIUM-PHILOSOPHY.md). **Prove the violation, not the conversation.** VESTIGIUM is a proposed accountability doctrine, not a deployed surveillance or access mechanism.
