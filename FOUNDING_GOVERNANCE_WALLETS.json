@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "chainId": 324,
+  "governanceContract": "0x978eD18f0a017b06d4F0C02EB11D4C540D3c5c06",
+  "foundingMembershipVersion": 1,
+  "foundingWallets": [
+    {
+      "seatIndex": 0,
+      "address": "0xB3Afbb367d9A33f7723E2d00F1a4f975a61Dca51"
+    },
+    {
+      "seatIndex": 1,
+      "address": "0x50eE5C763a4b8D335448c2e65b38285f9617D68f"
+    },
+    {
+      "seatIndex": 2,
+      "address": "0x4950BD5bfc3ecC1886259411329B4e04af67Af71"
+    },
+    {
+      "seatIndex": 3,
+      "address": "0xDC0b12D897210630Be353BDA9Dd090B2AB3378aC"
+    },
+    {
+      "seatIndex": 4,
+      "address": "0x11AEbAc09bb22EFdA764A55BBca7514dAB9c9518"
+    },
+    {
+      "seatIndex": 5,
+      "address": "0x0e5e25561DA623b4B000D4De1117ABd41C1AE202"
+    },
+    {
+      "seatIndex": 6,
+      "address": "0xB2C9a050c783c00175528758385BBC78BD9C3ab2"
+    },
+    {
+      "seatIndex": 7,
+      "address": "0xA7375e41B2c84e0B31aD1F774fb064723AebF898"
+    },
+    {
+      "seatIndex": 8,
+      "address": "0x24Dc39Ec589dA61bf0649DBc953888C133eD523d"
+    },
+    {
+      "seatIndex": 9,
+      "address": "0xA9C4Be0636187cFC67E03f1D80a71Ed1B796712c"
+    }
+  ],
+  "custody": "Initially under common Apesoft control; intended for later redistribution under applicable governance rules.",
+  "independentOperators": false,
+  "productionAttestationAuthority": false,
+  "source": "Recorded founding governance deployment manifest; historical founding membership, not a live membership oracle.",
+  "sourceTransaction": "0xb6410084c0fa25ef8297f7171e9ea87f075dc7d383647d79796afbda66438c5b",
+  "liveMembershipVerification": "Pending fresh verification",
+  "miningActivationAuthorized": false,
+  "signingAuthorized": false
+}
