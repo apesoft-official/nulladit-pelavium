@@ -8,15 +8,15 @@ interface Vm {
     function expectRevert(bytes4) external;
 }
 contract MockCovenant is IVestigaviumCovenant {
-    bytes32 public foundationRoot = keccak256("foundation");
+    bytes32 public override foundationRoot = keccak256("foundation");
     bool public approved;
     bool public revoked;
     bytes32 public manifest;
     function configure(bool a, bool r, bytes32 m) external {
         approved = a; revoked = r; manifest = m;
     }
-    function isReleaseApproved(uint64) external view returns(bool) { return approved; }
-    function releases(uint64) external view returns(bytes32,bytes32,bytes32,uint64,bool) {
+    function isReleaseApproved(uint64) external view override returns(bool) { return approved; }
+    function releases(uint64) external view override returns(bytes32,bytes32,bytes32,uint64,bool) {
         return (bytes32(0),bytes32(0),manifest,1,revoked);
     }
 }
