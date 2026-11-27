@@ -44,12 +44,20 @@ contract Vestigavium {
         if (block.chainid != 324 || covenant.foundationRoot() != foundationRoot ||
             !covenant.isReleaseApproved(releaseVersion)) return false;
         (, , bytes32 approvedManifest, , bool revoked) = covenant.releases(releaseVersion);
-        return !revoked && approvedManifest == manifestHash;
+        return !revoked && approvedManifest == configurationCommitment();
+    }
+
+    /// @notice Governance must approve this exact instance and configuration.
+    function configurationCommitment() public view returns (bytes32) {
+        return keccak256(abi.encode(
+            keccak256("NULLADIT:VESTIGAVIUM:CONFIG:V1"),
+            block.chainid, address(this), address(covenant), foundationRoot,
+            manifestHash, releaseVersion, batchPublisher
+        ));
     }
 
     /// @notice Anchor an opaque, padded batch commitment only.
-    /// @dev Publisher must be designated in the independently verified approved
-    /// manifest. This candidate does not verify that designation on-chain.
+    /// @dev The approved configuration binds the publisher and this instance.
     function commitBatch(uint64 epoch, bytes32 root) external {
         if (msg.sender != batchPublisher) revert Unauthorized();
         if (!active()) revert NotApproved();
