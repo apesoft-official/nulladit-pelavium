@@ -17,3 +17,8 @@ The contract cannot compile, host, or install software on nodes. A release pipel
 Before any proposed NULLADIT adoption, identify an immutable commit and artifact digest, document compatibility and migration, obtain independent security review, and submit the exact revision through applicable NULLADIT governance. Approval must be independently verified in the production integration process; this public repository cannot grant itself deployment authority. No automatic promotion to NODSEL, no production credentials, and no mining or contract changes are authorized here.
 
 A changed candidate requires fresh evidence and review. NODSEL documents actual deployed encryption only.
+
+
+## Vestigium accountability candidate
+
+The public [VESTIGIUM specification](VESTIGIUM.md) and [Solidity candidate](research/Vestigium.sol) describe an opaque batch-root anchor that is proposed to accompany Aurora Covenant in the private candidate deployment graph. It is not a proof-of-delivery verifier, misconduct adjudicator, access-control system, or decryption tool. The Presumption of Digital Inviolability is a design requirement: no evidence record or governance vote creates access to messages, relationships, keys, or personal information. This integration remains research-only until the exact sources, deployment graph, evidence protocol, and governance action receive independent review and approval.
