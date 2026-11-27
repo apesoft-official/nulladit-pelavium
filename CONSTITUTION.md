@@ -15,3 +15,25 @@ No message content, recipient identity, relationship, personal information, or r
 
 ## Aurora Covenant constitutional boundary
 The original eight NULLADIT contracts remain the constitutional base. Aurora Covenant is a research-only, subordinate release registry proposal. It may record a release only after approval of the exact action through the designated governance process; it cannot modify, administer, or override the founding contracts, activate mining, or compel a node to install an update. Repository publication, CI, and research results are not deployment approval. Independent security review and separate constitutional approval are required before production adoption.
+
+
+## Presumption of Digital Inviolability
+
+Apesoft Canada shall possess no inherent contractual entitlement to access, decrypt, reconstruct, inspect or demand disclosure of a user's protected communications, private relationships, cryptographic secrets or vulnerable personal information.
+
+Participation in NULLADIT shall not constitute consent to surveillance.
+
+An exceptional claim for narrowly restricted access may arise only where:
+
+1. A demonstrable violation of PELAVIUM's security or integrity requirements has occurred.
+2. VESTIGIUM has recorded independently verifiable cryptographic evidence attributable to the responsible participant.
+3. That evidence has undergone independent review and cannot reasonably be explained by ordinary network activity, technical failure or innocent participation.
+4. The proposed access is necessary, proportionate and independently lawful.
+
+Suspicion alone shall never constitute authorization. Nor shall a violation extinguish a participant's general right to privacy.
+
+Apesoft Canada shall not introduce a backdoor, universal decryption key or privileged surveillance mechanism to facilitate such access.
+
+The burden of establishing justification shall remain with the party seeking access, never with the participant seeking privacy.
+
+This is a proposed constitutional requirement, not a grant of technical access. VESTIGIUM's current candidate only anchors opaque batch roots; it does not collect evidence, adjudicate violations, decrypt data, or authorize access. No message content, identity, relationship, IP address, browser fingerprint, key, or raw evidence may be placed on-chain.
