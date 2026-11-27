@@ -1,10 +1,10 @@
-name: Vestigavium research tests
+name: Vestigium research tests
 on:
   push:
     paths:
-      - 'research/Vestigavium.sol'
-      - 'research/test/Vestigavium.t.sol'
-      - '.github/workflows/vestigavium-tests.yml'
+      - 'research/Vestigium.sol'
+      - 'research/test/Vestigium.t.sol'
+      - '.github/workflows/vestigium-tests.yml'
   pull_request:
   workflow_dispatch:
 permissions:
@@ -19,8 +19,8 @@ jobs:
           version: v1.3.1
       - name: Compile and test isolated research candidate
         run: |
-          mkdir -p /tmp/vestigavium-test/src /tmp/vestigavium-test/test
-          cp research/Vestigavium.sol /tmp/vestigavium-test/src/
-          sed 's|../Vestigavium.sol|../src/Vestigavium.sol|' research/test/Vestigavium.t.sol > /tmp/vestigavium-test/test/Vestigavium.t.sol
-          cd /tmp/vestigavium-test
+          mkdir -p /tmp/vestigium-test/src /tmp/vestigium-test/test
+          cp research/Vestigium.sol /tmp/vestigium-test/src/
+          sed 's|../Vestigium.sol|../src/Vestigium.sol|' research/test/Vestigium.t.sol > /tmp/vestigium-test/test/Vestigium.t.sol
+          cd /tmp/vestigium-test
           forge test --use 0.8.24 -vvv
