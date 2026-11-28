@@ -4,6 +4,11 @@ on:
     paths:
       - 'research/Vestigium.sol'
       - 'research/test/Vestigium.t.sol'
+      - 'research/NSELCBA.sol'
+      - 'research/test/NSELCBA.t.sol'
+      - 'research/test/NSELCBAFoundationFork.t.sol'
+      - 'docs/NSELCBA-OPERATOR-TERMS.md'
+      - 'docs/NSELCBA-COMPATIBILITY-REVIEW.md'
       - '.github/workflows/vestigavium-tests.yml'
   pull_request:
   workflow_dispatch:
@@ -21,6 +26,10 @@ jobs:
         run: |
           mkdir -p /tmp/vestigium-test/src /tmp/vestigium-test/test
           cp research/Vestigium.sol /tmp/vestigium-test/src/
+          cp research/NSELCBA.sol /tmp/vestigium-test/src/
           sed 's|../Vestigium.sol|../src/Vestigium.sol|' research/test/Vestigium.t.sol > /tmp/vestigium-test/test/Vestigium.t.sol
+          sed 's|../NSELCBA.sol|../src/NSELCBA.sol|' research/test/NSELCBA.t.sol > /tmp/vestigium-test/test/NSELCBA.t.sol
+          sed 's|../NSELCBA.sol|../src/NSELCBA.sol|' research/test/NSELCBAFoundationFork.t.sol > /tmp/vestigium-test/test/NSELCBAFoundationFork.t.sol
           cd /tmp/vestigium-test
-          forge test --use 0.8.24 -vvv
+          forge test --no-match-contract NSELCBAFoundationForkTest --use 0.8.24 -vvv
+          forge test --match-contract NSELCBAFoundationForkTest --fork-url https://mainnet.era.zksync.io --use 0.8.24 -vvv

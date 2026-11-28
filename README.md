@@ -58,3 +58,7 @@ Read the [Doctrine of Evidentiary Restraint](VESTIGIUM-PHILOSOPHY.md). **Prove t
 ## NULL22 representation and node rewards
 
 See the [NULL22 Representation and Node Service Compensation policy](TOKEN-REPRESENTATION-AND-NODE-REWARDS.md). It records Apesoft's representation limits and the proposed opt-in Proof-of-Service reward standard; it does not determine legal classification or replace applicable valuation and reporting rules.
+
+## NSELCBA operator attestation candidate
+
+The [Node Service Exchange Lawful Canadian Barter Attestation (NSELCBA)](research/NSELCBA.sol) is a **research-only, not-deployed** contract candidate for operator opt-in and service-exchange statements. Its title is not a legal finding; the contract does not determine securities or tax classification, verify service performance, or prove token delivery. See the [canonical operator terms](docs/NSELCBA-OPERATOR-TERMS.md), [compatibility review](docs/NSELCBA-COMPATIBILITY-REVIEW.md), and [compiled EraVM artifact](research/artifacts/NSELCBA-era-0.8.24-zksolc-1.5.15.json). Compilation and tests are not deployment approval.
