@@ -1,6 +1,13 @@
 # NSELCBA operator terms — version 1
 
-**RESEARCH ONLY — NOT DEPLOYED.** These terms accompany the source candidate
+**STANDALONE DEPLOYMENT REPORTED — PRODUCTION INTEGRATION NOT VERIFIED.**
+An operator-reported deployment dated November 28, 2026 identifies ZKsync Era
+(chain 324) contract `0x345b71De17C351fdc8AC964d5ADF67Fe36bCd627` and
+[transaction receipt](https://explorer.zksync.io/tx/0x433d5f803842c19d8faa6ca3d01cf760c224100717a6f89b04d8d2c54718592c).
+Independent receipt and deployed-bytecode reconciliation, constitutional approval,
+and legal review remain outstanding. Ordinary messaging is not gated by these terms.
+
+These terms accompany the source candidate
 [`research/NSELCBA.sol`](../research/NSELCBA.sol). The contract's `TERMS_HASH`
 must equal the Keccak-256 hash of the exact UTF-8 text in the block below,
 including its final newline. A changed text requires a new version and hash.
