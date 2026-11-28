@@ -52,3 +52,11 @@ VESTIGIUM may anchor an opaque commitment to evidence of a signed request, inclu
 Sybil resistance may use transparent, governance-approved registration rules, uniform privacy-preserving rate limits, or capability probation. It shall not convert a legitimate recipient claim into a node-imposed payment gate, identity-disclosure requirement, or surveillance mechanism. A verified node remains subject to least privilege because legitimate access to some traffic does not authorize observation of unrelated traffic.
 
 This article interprets and supplements the existing Presumption of Digital Inviolability and equal-access requirements. It grants no decryption power, administrative privilege, mining authority, governance vote, contract authority, or deployment approval, and it does not modify or override the original eight founding contracts. Documentation alone does not implement these controls; enforceable claims require compatible protocol, node, and client behavior supported by reviewable evidence.
+
+## NULL22 representation and node-reward boundary
+
+Apesoft shall not market or describe NULL22 as legal tender, government-issued money, an investment, a security, a deposit, guaranteed store of value, or promise of profit or appreciation. This rule governs project representations and does not determine legal classification or create a regulatory exemption.
+
+Reward-eligible Proof-of-Service participation is voluntary. An operator choosing to participate must expressly accept the applicable NULL22-denominated reward terms. The intended service-for-token arrangement may be described as barter-like or non-cash consideration, but repository text and proof receipts do not determine legal or tax treatment. Agreed reward quantities do not displace legally required valuation, tax, securities, or other obligations. Electricity and bandwidth costs may inform an operator's decision whether to participate; they do not themselves establish token value, fair market value, or legal adequacy.
+
+See [TOKEN-REPRESENTATION-AND-NODE-REWARDS.md](TOKEN-REPRESENTATION-AND-NODE-REWARDS.md) for the full policy and official CRA/CSA references. This documentation does not amend deployed contracts or existing node agreements and does not prove operator assent.
