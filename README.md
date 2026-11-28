@@ -49,7 +49,7 @@ Developed by **Apesoft Canada** · **Inviolable Conversations**
 
 ## Constitutional accountability
 
-[VESTIGIUM](VESTIGIUM.md) is a proposed accountability protocol for privacy-preserving delivery evidence. Its research contract stores opaque batch commitments only; it does not reveal message contents or grant access to protected data. The current candidate is not deployed and is not a production dependency.
+[VESTIGIUM](VESTIGIUM.md) is a proposed accountability protocol for privacy-preserving delivery evidence. Its research contract stores opaque batch commitments only; it does not reveal message contents or grant access to protected data. The candidate is not a production dependency. An Aurora graph deployment was reported on November 27, 2026; Vestigium child address and bytecode are not independently reconciled.
 
 ## VESTIGIUM — Evidence without surveillance
 
@@ -61,4 +61,6 @@ See the [NULL22 Representation and Node Service Compensation policy](TOKEN-REPRE
 
 ## NSELCBA operator attestation candidate
 
-The [Node Service Exchange Lawful Canadian Barter Attestation (NSELCBA)](research/NSELCBA.sol) is a **research-only, not-deployed** contract candidate for operator opt-in and service-exchange statements. Its title is not a legal finding; the contract does not determine securities or tax classification, verify service performance, or prove token delivery. See the [canonical operator terms](docs/NSELCBA-OPERATOR-TERMS.md), [compatibility review](docs/NSELCBA-COMPATIBILITY-REVIEW.md), and [compiled EraVM artifact](research/artifacts/NSELCBA-era-0.8.24-zksolc-1.5.15.json). Compilation and tests are not deployment approval.
+The [Node Service Exchange Lawful Canadian Barter Attestation (NSELCBA)](research/NSELCBA.sol) is a **research-only, non-integrated** contract candidate (a standalone deployment was reported on November 28, 2026; bytecode reconciliation is outstanding) for operator opt-in and service-exchange statements. Its title is not a legal finding; the contract does not determine securities or tax classification, verify service performance, or prove token delivery. See the [canonical operator terms](docs/NSELCBA-OPERATOR-TERMS.md), [compatibility review](docs/NSELCBA-COMPATIBILITY-REVIEW.md), and [compiled EraVM artifact](research/artifacts/NSELCBA-era-0.8.24-zksolc-1.5.15.json). Compilation and tests are not deployment approval.
+
+See [the consolidated deployment and whitepaper bulletin](WHITEPAPER-DEPLOYMENT-UPDATE-2026-11-28.md) for recorded addresses and evidence limitations. No mining or production activation is implied.
