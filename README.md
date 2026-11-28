@@ -58,3 +58,7 @@ Read the [Doctrine of Evidentiary Restraint](VESTIGIUM-PHILOSOPHY.md). **Prove t
 ## NULL22 representation and node rewards
 
 See the [NULL22 Representation and Node Service Compensation policy](TOKEN-REPRESENTATION-AND-NODE-REWARDS.md). It records Apesoft's representation limits and the proposed opt-in Proof-of-Service reward standard; it does not determine legal classification or replace applicable valuation and reporting rules.
+
+## NSELCBA bilateral exchange attestation candidate
+
+The [Node Service Exchange Lawful Canadian Barter Attestation (NSELCBA)](research/NSELCBA.sol) is a **research-only, not-deployed** contract candidate. Version 2 requires both exchange parties and every address in an explicit, signed witness snapshot to sign the same EIP-712 digest; it supports EOA and ERC-1271 signatures. The contract cannot prove the supplied witness snapshot contains every network node, transfer NULL22, verify service delivery, establish legal valuation, or determine whether NULL22 is a security under Canadian law. The checked-in EraVM artifact is from the earlier single-operator version and is stale; do not use it for deployment or signing. See the [version 2 exchange terms](docs/NSELCBA-OPERATOR-TERMS.md) and [compatibility review](docs/NSELCBA-COMPATIBILITY-REVIEW.md). The new candidate has not yet been compiled or tested in this checkout; tests and independent review are required, and production authorization remains false.
